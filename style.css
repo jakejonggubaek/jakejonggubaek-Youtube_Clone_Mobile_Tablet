@@ -1,0 +1,241 @@
+:root {
+    /* Colour */
+    --white-colour: #fff;
+    --black-colour: #140a00;
+    --blue-colour: #045fd4;
+    --red-colour: #ff0000;
+    --grey-dark-colour: #909090;
+    --grey-light-colour: #e0e0e0;
+
+    /* Size */
+    --size-padding: 12px;
+    --avatar-size: 36px;
+
+    /* Font Size*/
+    --font-large: 18px;
+    --font-medium: 14px;
+    --font-small: 12px;
+    --font-Xsmall: 10px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto;
+}
+
+ul, li{
+    list-style: none;
+}
+
+button,
+button:focus {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: #140a00;
+    color: #fff;
+}
+
+header .logo{
+    font-size: #ff0000;
+}
+
+header .logo i{
+    color: #ff0000;
+}
+
+header .icons .fa-search {
+    margin-right: 12px;
+}
+
+.player {
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background-color: #140a00;
+}
+
+.player video {
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+
+    
+}
+
+body > .info {
+    padding: 12px;
+}
+
+.info .metadata {
+    margin: 12px;
+}
+    
+
+.info .metadata .hashtags {
+    display: flex;
+    font-size: 12px;
+    color: #045fd4;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+.info .metadata .hashtags li {
+    margin-right: 12px;
+}
+
+.info .metadata .titleNBtn {
+    display: flex;
+}
+
+.info .metadata .titleNBtn .title{
+    font-size: 14px;
+    /* MDN -webkit-line-clamp  https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-line-clamp */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    margin-right: 12px;
+}
+
+.info .metadata .titleNBtn .moreBtn{
+    height: 100%;
+}
+
+.info .metadata .views {
+    font-size: 12px;
+    color: #909090;
+}
+
+.info .action {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 12px;
+}
+
+.info .action button{
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    color: #909090;
+}
+
+.info .action button i{
+    margin: 0 auto;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+.info .action button i.active{
+    color: #045fd4;
+}
+
+.channel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.channel .metadata{
+    display: flex;
+    align-items: center;
+}
+
+.channel .metadata .info{
+    display: flex;
+    flex-direction: column;
+}
+
+.channel .metadata img {
+    margin: 12px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+.channel .subscribeBtn{
+    margin: 12px;
+    align-content: center;
+    color: #909090;
+}
+
+.channel .metadata .info .name{
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.channel .metadata .info .subscribers{
+    font-size: 12px;
+    color: #909090;
+}
+
+.channel .subscribeBtn {
+    color: #ff0000;
+    font-size: 14px;
+}
+
+.up_next .title {
+    font-size: 14px;
+    color: #909090;
+    margin-bottom: 6px;
+    margin: 6px;
+}
+
+.up_next .up_next_info {
+    margin: 6px;
+    width: 100%;
+    display: flex;
+    margin-top: 12px;
+}
+
+.up_next .up_next_info .img{
+    flex:1 1 35%;
+    margin-right: 12px;
+}
+
+.up_next .up_next_info .info{
+    display: flex;
+    flex-direction: column;
+    flex:1 1 60%;
+}
+
+.up_next .up_next_info .info .name{
+    font-size: 14px;
+    color: #909090;
+}
+
+.up_next .up_next_info .info .view{
+    font-size: 12px;
+    color: #909090;
+}
+
+.up_next .up_next_info .moreBtn{
+    flex:1 1 5%;
+}
+
+.infoAndUpnext {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:768px) {
+    .infoAndUpnext {
+        display: flex;
+        flex-direction: row;
+        margin: 12px;
+    }
+}
